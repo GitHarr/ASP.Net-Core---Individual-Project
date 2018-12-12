@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="appsettings.json" />
+    <None Remove="appsettingsDb.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="appsettings.json">
+    <Content Include="appsettingsDb.json">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
@@ -23,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MHM.Data.Models\MHM.Data.Models.csproj" />
+    <ProjectReference Include="..\MHMApp.Data.Common\MHMApp.Data.Common.csproj" />
   </ItemGroup>
 
 </Project>
